@@ -1,7 +1,6 @@
 import sys
 
 args = sys.argv
-largs = len(args)
 
 try:
     if len(args) > 2:
