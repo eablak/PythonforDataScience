@@ -15,14 +15,14 @@ print(ft_set)
 print(ft_dict)
 
 
-"""# ordered and unchangeable
-ft_tuple = ("Hello",)
-print(type(ft_tuple))
-print(ft_tuple[0])
-ft_tuple = ("Hello", "Hello", "Turkey!")
-print(ft_tuple)
+# # ordered and unchangeable
+# ft_tuple = ("Hello",)
+# print(ft_tuple[0])
 
-# unordered, unchangeable*(remove,add), unindexed
-ft_set = {"Hello", "Hello", "İstanbul!"}
+# ft_tuple = ("Hello", "Hello", "Turkey!")
+# print(ft_tuple)
 
-# as of python version 3.7, dicts are ordered. 3.6 and earlier unordered"""
+# # unordered, unchangeable*(remove,add), unindexed
+# ft_set = {"Hello", "Hello", "İstanbul!"}
+# print(ft_set)
+# print(ft_set[0])

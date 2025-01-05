@@ -3,6 +3,7 @@ import sys
 args = sys.argv
 
 try:
+    
     if len(args) > 2:
         raise AssertionError("more than one argument is provided")
     if len(args) == 2:
@@ -11,6 +12,7 @@ try:
             print("I'm Even")
         else:
             print("I'm Odd")
+
 except AssertionError as e:
     print(f"AssertionError: {e}")
 except ValueError:
