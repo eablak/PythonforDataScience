@@ -2,7 +2,10 @@ def calculate_bmi(height, weight):
     return weight / (height * height)
 
 
-def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]:
+def give_bmi(
+    height: list[int | float],
+    weight: list[int | float]
+) -> list[int | float]:
 
     bmi_values = []
     try:
@@ -17,9 +20,8 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
             bmi_values.append(calculate_bmi(height[i], weight[i]))
     except ValueError as e:
         print(e)
-    
-    return bmi_values
 
+    return bmi_values
 
 
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
