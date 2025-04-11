@@ -1,7 +1,7 @@
 ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
-ft_dict = {"Hello" : "titi!"}
+ft_dict = {"Hello": "titi!"}
 
 ft_list[1] = "World!"
 ft_tuple = ("Hello", "Turkey!")
@@ -13,16 +13,3 @@ print(ft_list)
 print(ft_tuple)
 print(ft_set)
 print(ft_dict)
-
-
-# # ordered and unchangeable
-# ft_tuple = ("Hello",)
-# print(ft_tuple[0])
-
-# ft_tuple = ("Hello", "Hello", "Turkey!")
-# print(ft_tuple)
-
-# # unordered, unchangeable*(remove,add), unindexed
-# ft_set = {"Hello", "Hello", "İstanbul!"}
-# print(ft_set)
-# print(ft_set[0])

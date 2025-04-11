@@ -3,6 +3,17 @@ from ft_filter import ft_filter
 
 
 def main():
+    """
+Processes command-line arguments and filters words based on length.
+
+Expects exactly two arguments:
+- A string of alphabetic words (space-separated)
+- An integer 'n'
+
+The function filters and prints words from the string
+that are longer than 'n' characters.
+    """
+
     args = sys.argv
 
     try:
@@ -26,4 +37,6 @@ def main():
 
 
 if __name__ == "__main__":
+    print(filter.__doc__)
+    print(ft_filter.__doc__)
     main()

@@ -2,7 +2,12 @@ import sys
 
 
 def encode_to_morse(string):
+    """
+    Converts a given string into its Morse code equivalent.
 
+    Only uppercase letters A-Z, digits 0-9, and spaces are supported.
+    Any other character will raise an AssertionError.
+    """
     morse_code = {
             'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
             'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
@@ -24,6 +29,10 @@ def encode_to_morse(string):
 
 
 def main():
+    """
+    Takes a single command-line argument and prints its Morse code equivalent.
+    Raises an AssertionError if input is not alphanumeric or space.
+    """
     args = sys.argv
 
     try:
