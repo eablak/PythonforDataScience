@@ -2,7 +2,14 @@ import numpy as np
 
 
 def slice_me(family: list, start: int, end: int) -> list:
+    """
+    Slice a 2D list (matrix) from start to end index and print its shapes.
 
+    :param family: A 2D list (list of lists) with equal-length rows.
+    :param start: Start index for slicing.
+    :param end: End index for slicing.
+    :return: Sliced 2D list.
+    """
     try:
         if not (
             isinstance(family, list) or
