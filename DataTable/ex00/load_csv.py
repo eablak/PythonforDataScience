@@ -2,7 +2,12 @@ import pandas as pd
 
 
 def load(path: str) -> pd.DataFrame:
+    """
+    Load a CSV file into a pandas DataFrame.
 
+    :param path: Path to the CSV file.
+    :return: DataFrame if successful, else None.
+    """
     if (isinstance(path, str) is False):
         return None
     try:
