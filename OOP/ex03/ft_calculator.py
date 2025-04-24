@@ -19,7 +19,7 @@ class calculator:
 
         :param object: The number to subtract (int or float).
         """
-        self.object = [i-object for i in self.object]
+        self.object = [i*object for i in self.object]
         print(self.object)
 
     def __sub__(self, object) -> None:
@@ -28,7 +28,7 @@ class calculator:
 
         :param object: The number to multiply with (int or float).
         """
-        self.object = [i*object for i in self.object]
+        self.object = [i-object for i in self.object]
         print(self.object)
 
     def __truediv__(self, object) -> None:
@@ -39,5 +39,6 @@ class calculator:
         """
         try:
             self.object = [i // object for i in self.object]
+            print(self.object)
         except ZeroDivisionError:
             print("You cant divide zero")

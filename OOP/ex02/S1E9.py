@@ -21,18 +21,19 @@ class Character(ABC):
 
 class Stark(Character):
     """
-Inherits from Character.
-Representing member of House Stark."""
+    Inherits from Character.
+    Representing member of House Stark."""
 
     def __init__(self, first_name, is_alive=True):
         """
-Initialize House Stark character.
-Args:
-first_name (str): first name for character
-is_alive (bool): life status for character"""
+        Initialize House Stark character.
+        Args:
+        first_name (str): first name for character
+        is_alive (bool): life status for character"""
         super().__init__(first_name, is_alive)
 
     def die(self):
         """
-Change character's status in the game accordingly setting is_alive False"""
+        Change character's status in the game
+        accordingly setting is_alive False"""
         self.is_alive = False
