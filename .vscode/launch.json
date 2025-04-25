@@ -9,7 +9,7 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "Starting/ex08/tester.py",
+            "program": "Dod/ex01/tester.py",
             "console": "integratedTerminal"
         }
     ]
