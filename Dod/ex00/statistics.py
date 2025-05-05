@@ -30,7 +30,7 @@ def calculate_median(numbers: list):
     if len(numbers) % 2 != 0:
         median = numbers[(n - 1) // 2]
     else:
-        median = numbers[(n-1) // 2] + numbers[n//2]
+        median = (numbers[(n - 1) // 2] + numbers[n // 2]) / 2
     return median
 
 
@@ -45,11 +45,25 @@ def calculate_quartile(numbers: list):
         list of float: [Q1, Q3].
     """
     numbers.sort()
+    n = len(numbers)
 
-    q1 = float(calculate_median(numbers[:len(numbers) // 2 + 1]))
-    q3 = float(calculate_median(numbers[len(numbers) // 2:]))
+    q = []
+    q1_index = n * 0.25
+    q3_index = n * 0.75
 
-    return [q1, q3]
+    if q1_index.is_integer():
+        q1_index = int(q1_index)
+        q.append(float((numbers[q1_index - 1] + numbers[q1_index]) / 2))
+    else:
+        q.append(float(numbers[int(q1_index)]))
+
+    if q3_index.is_integer():
+        q3_index = int(q3_index)
+        q.append(float((numbers[q3_index - 1] + numbers[q3_index]) / 2))
+    else:
+        q.append(float(numbers[int(q3_index)]))
+
+    return q
 
 
 def calculate_std(numbers: list):
